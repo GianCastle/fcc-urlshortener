@@ -7,7 +7,7 @@ const URL = mongoose.model('URL', {
   short_url    : Number,
 });
 
-mongoose.connect('mongodb://localhost/urlshort');
+mongoose.connect( 'mongodb://test:fccurlshort@ds021884.mlab.com:21884/url-shortener');
 app.set('view engine', 'pug');
 app.get('/', (req, res, next) => res.render('index'));
 app.get('/new', function(req, res, next) {
