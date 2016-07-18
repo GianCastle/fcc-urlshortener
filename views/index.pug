@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    title URL Shortener Microservice
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css')
+  body
+    h1 URL Shortener
+    h4 User stories:
+    blockquote
+      strong
+        i 1) I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+    blockquote
+      strong
+        i 2) When I visit that shortened URL, it will redirect me to my original link.
+
+    h4 Creation usage
+    code http://fccshoter.herokuapp.com/new?q=https://twitter.com
+    p Also as HTTP
+    code http://fccshoter.herokuapp.com/new?q=http://facebook.com
+
+    h4 Creation output
+    code { "original_url":"http://foo.com:80", "short_url":"RANDOM_NUMBER" }
+
+    h4 Short link usage
+    code http://fccshoter.herokuapp.com/RANDOM_NUMBER_GIVED
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')

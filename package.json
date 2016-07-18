@@ -1,0 +1,30 @@
+{
+  "name": "fcc-urlshorttener",
+  "version": "1.0.0",
+  "description": "An exercise of Free Code Camp Backend Certification",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giancastle/fcc-urlshort.git"
+  },
+  "keywords": [
+    "js",
+    "fcc",
+    "freecodecamp",
+    "backend"
+  ],
+  "author": "Giancarlos Castillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giancastle/fcc-urlshort/issues"
+  },
+  "homepage": "https://github.com/giancastle/fcc-urlshort#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongoose": "^4.5.4",
+    "pug": "^2.0.0-beta3"
+  }
+}
